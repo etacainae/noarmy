@@ -1,0 +1,10 @@
+@media screen and (min-width: 1920px) {
+  #main-section {
+    height: auto;
+    margin-bottom: -8px;
+  }
+  #main-section .video-bg {
+    height: auto;
+    margin-top: -136px;
+  }
+}
