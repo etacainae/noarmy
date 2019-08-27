@@ -4,17 +4,22 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <meta name="description" content="Наша компания занимается консультацией призывников и освобождением их от военной службе в Беларуси">
+  <link rel="shortcut icon" href="img/favicon.png">
+  <title>Не Армия</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="slick/slick-theme.css">
   <link rel="stylesheet" href="slick/slick.css">
   <link rel="stylesheet" href="css/main.css">
-  <title>Не Армия</title>
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css">
 </head>
 <body>
   <header id="header">
     <div class="container">
       <div class="header-logo">
-        <img src="img/logo.png" alt="НЕАРМИЯ">
+        <a href="#main-section">
+          <img src="img/logo.png" alt="НЕАРМИЯ">
+        </a>
       </div>
       <div class="header-menu">
         <nav>
@@ -55,22 +60,22 @@
       <div class="container">
         <div class="wrap-center">
           <div class="text-wrap">
-            <h1>
+            <h1 class="wow bounceInRight">
               Не стоит косить от армии!
               Освободим от службы
               ЗАКОННО
             </h1>
-            <div class="desc">
+            <div class="desc wow bounceInRight" data-wow-delay=".4s">
               <span>
-                Врачебно-юридическая помощь<br>
+                Врачебно-юридическая помощь
                 по всей Белоруссии
               </span>
             </div>
-            <a class="btn" href="#">
+            <a class="btn wow bounceInRight" data-wow-delay=".8s" href="#form-section">
               Бесплатная консультация
             </a>
           </div>
-          <div class="img">
+          <div class="img-wrap wow bounceIn" data-wow-delay="1.5s">
             <img src="img/main-img.png" alt="">
           </div>
         </div>
@@ -84,13 +89,13 @@
             на ваши вопросы!
           </h3>
           <div class="faqs-wrap">
-            <div class="faqs-item">
+            <div class="faqs-item wow fadeInRight">
               <h2>Как законно не пойти в армию?</h2>
             </div>
-            <div class="faqs-item">
+            <div class="faqs-item wow fadeInLeft">
               <h2>Что делать, если пришла повестка?</h2>
             </div>
-            <div class="faqs-item">
+            <div class="faqs-item wow fadeInRight">
               <h2>
                 Можно ли освободиться от службы в армии,<br>
                 если меня уже признали годным?
@@ -110,20 +115,11 @@
           </span>
         </div>
         <div class="wrap-center">
-          <form method="POST" action="mailer/smart.php" class="form">
+          <form class="form">
             <input type="text" name="user_name" placeholder="Имя" required>
             <input type="tel" name="user_phone" placeholder="Телефон" required>
             <button class="form-btn" type="submit">Заказать бесплатную консультацию </button>
-            <label class="checkbox">
-              <input type="checkbox">
-              <span>
-                Даю согласие на обработку <a href="#">персональных данных</a>
-              </span>
-            </label>
           </form>
-          <p class="text-info">
-            Ответим на ваши вопросы в Viber, Telegram или оставьте заявку на Бесплатную консультацию по вопросам призыва по номеру <a href="tel:+375 (25) 912-49-60">+375 (25) 912-49-60</a> либо напишите нам в ВК, или Instagram
-          </p>
         </div>
       </div>
     </section>
@@ -139,7 +135,7 @@
             </span>
           </div>
           <div class="steps-wrap">
-            <div class="step-item" style="top: 146px">
+            <div class="step-item wow fadeInLeft" style="top: 227px">
               <img src="img/step1.png" alt="">
               <div class="step-item__text">
                 <span>
@@ -149,17 +145,19 @@
                 </span>
               </div>
             </div>
-            <div class="step-item step-red" style="top: 369px">
-              <div class="step-item__text">
-                <span>
-                  Подбираем для вас<br>
-                  способ решения и проводим<br>
-                  бесплатную консультацию
-                </span>
+            <div class="step-item step-red" style="top: 890px">
+              <div class="step-red__wrap wow fadeInRight">
+                <div class="step-item__text">
+                  <span>
+                    Подбираем для вас<br>
+                    способ решения и проводим<br>
+                    бесплатную консультацию
+                  </span>
+                </div>
+                <img src="img/step2.png" alt="">
               </div>
-              <img src="img/step2.png" alt="">
             </div>
-            <div class="step-item" style="top: 609px; left: 30px">
+            <div class="step-item wow fadeInLeft" style="top: 1627px">
               <img src="img/step3.png" alt="">
               <div class="step-item__text">
                 <span>
@@ -167,7 +165,7 @@
                 </span>
               </div>
             </div>
-            <div class="step-item" style="top: 853px">
+            <div class="step-item wow fadeInRight" style="top: 2319px;">
               <div class="step-item__text">
                 <span>
                   Собираем необходимые<br>
@@ -176,7 +174,7 @@
               </div>
               <img src="img/step4.png" alt="">
             </div>
-            <div class="step-item" style="top: 1111px; left: 20px">
+            <div class="step-item wow fadeInLeft" style="top: 3082px; left: -32px;">
               <img src="img/step5.png" alt="">
               <div class="step-item__text">
                 <span>
@@ -185,7 +183,7 @@
                 </span>
               </div>
             </div>
-            <div class="success">
+            <div class="success wow fadeIn">
               <span>Успех!</span>
             </div>
           </div>
@@ -197,7 +195,7 @@
         <div class="wrap-center">
           <h2>Пакеты</h2>
           <div class="packets-wrap">
-            <div class="packets-item">
+            <div class="packets-item wow zoomIn">
               <div class="header">
                 <img src="img/packet1.png" alt="">
               </div>
@@ -238,9 +236,9 @@
                 <span>399 BYN</span>
               </div>
             </div>
-            <div class="packets-item">
+            <div class="packets-item wow zoomIn">
               <div class="header">
-                <img src="img/packet2.png" alt="">
+                <img style="top: -30px" src="img/packet2.png" alt="">
               </div>
               <div class="content">
                 <h3>
@@ -272,9 +270,9 @@
                 <span>499 BYN</span>
               </div>
             </div>
-            <div class="packets-item">
+            <div class="packets-item wow zoomIn">
               <div class="header">
-                <img style="left: 42%" src="img/packet3.png" alt="">
+                <img src="img/packet3.png" alt="">
               </div>
               <div class="content">
                 <h3>
@@ -323,9 +321,9 @@
         <div class="wrap-center">
           <h2>С вами будут работать</h2>
           <div class="staff-wrap">
-            <div class="staff-item">
+            <div class="staff-item wow bounceInLeft">
               <div class="img-wrap">
-                <img src="img/doctor.png" alt="">
+                <img src="img/staff1.png" alt="">
               </div>
               <div class="text-wrap">
                 <span>
@@ -334,9 +332,9 @@
                 </span>
               </div>
             </div>
-            <div class="staff-item">
+            <div class="staff-item wow bounceInRight">
               <div class="img-wrap">
-                <img src="img/lawyer.png" alt="">
+                <img src="img/staff2.png" alt="">
               </div>
               <div class="text-wrap">
                 <span>
@@ -345,9 +343,9 @@
                 </span>
               </div>
             </div>
-            <div class="staff-item">
+            <div class="staff-item wow bounceInLeft">
               <div class="img-wrap">
-                <img src="img/operator.png" alt="">
+                <img src="img/staff3.png" alt="">
               </div>
               <div class="text-wrap">
                 <span>
@@ -386,7 +384,7 @@
         </div>
         <div class="slider-wrap">
           <div class="slider-item">
-            <div class="img-wrap" style="background-image: url(img/вадим.png);"></div>
+            <div class="img-wrap" style="background-image: url(img/vadim.png);"></div>
             <div class="content">
               <span class="review">
                 По своей глупости
@@ -428,7 +426,7 @@
             </div>
           </div>
           <div class="slider-item">
-            <div class="img-wrap" style="background-image: url(img/вадим.png);"></div>
+            <div class="img-wrap" style="background-image: url(img/vadim.png);"></div>
             <div class="content">
               <span class="review">
                 По своей глупости
@@ -470,7 +468,7 @@
             </div>
           </div>
           <div class="slider-item">
-            <div class="img-wrap" style="background-image: url(img/вадим.png);"></div>
+            <div class="img-wrap" style="background-image: url(img/vadim.png);"></div>
             <div class="content">
               <span class="review">
                 По своей глупости
@@ -518,24 +516,30 @@
       <div class="container">
         <div class="wrap-center">
           <h2>Преимущества</h2>
+          <div class="desc">
+            <span>
+              Поможем получить Военный Билет<br>
+              или отсрочку. Даже, если признали годным! 
+            </span>
+          </div>
           <div class="advantages-wrap">
-            <div class="advantages-item">
-              <img src="img/adv1.png" alt="">
+            <div class="advantages-item wow bounceInLeft">
+              <img src="img/adv1.png" style="margin-left: 26px" alt="">
               <p>
                 Врачи и юристы<br>
                 с опытом работы<br>
                 от 10 лет
               </p>
             </div>
-            <div class="advantages-item">
-              <img src="img/adv2.png" alt="">
+            <div class="advantages-item wow bounceInRight">
+              <img src="img/adv2.png" style="margin-left: 46px" alt="">
               <p>
                 100% официально<br>
                  и в рамках закона
               </p>
             </div>
-            <div class="advantages-item">
-              <img src="img/adv3.png" alt="">
+            <div class="advantages-item wow bounceInLeft">
+              <img src="img/adv3.png" style="margin-left: 42px" alt="">
               <p>
                 Дистанционное
                 обслуживание
@@ -553,7 +557,7 @@
             предоставляет
           </h2>
           <div class="services-wrap">
-            <div class="services-item">
+            <div class="services-item wow bounceIn">
               <img src="img/services1.png" alt="">
               <div class="text-wrap">
                 <h3>Поддержка 24/7</h3>
@@ -566,7 +570,7 @@
                 </p>
               </div>
             </div>
-            <div class="services-item">
+            <div class="services-item wow bounceIn" data-wow-delay=".3s">
               <img src="img/services2.png" alt="">
               <div class="text-wrap">
                 <h3>Конфиденциальность</h3>
@@ -579,7 +583,7 @@
                 </p>
               </div>
             </div>
-            <div class="services-item">
+            <div class="services-item wow bounceIn" data-wow-delay=".6s">
               <img src="img/services3.png" alt="">
               <div class="text-wrap">
                 <h3>Свободное время</h3>
@@ -592,7 +596,7 @@
                 </p>
               </div>
             </div>
-            <div class="services-item">
+            <div class="services-item wow bounceIn">
               <img src="img/services4.png" alt="">
               <div class="text-wrap">
                 <h3>Юридическое сопровождение</h3>
@@ -606,7 +610,7 @@
                 </p>
               </div>
             </div>
-            <div class="services-item">
+            <div class="services-item wow bounceIn" data-wow-delay=".3s">
               <img src="img/services5.png" alt="">
               <div class="text-wrap">
                 <h3>Медицинская консультация</h3>
@@ -620,7 +624,7 @@
                 </p>
               </div>
             </div>
-            <div class="services-item">
+            <div class="services-item wow bounceIn" data-wow-delay=".6s">
               <img src="img/services6.png" alt="">
               <div class="text-wrap">
                 <h3>Защита Ваших интересов</h3>
@@ -638,9 +642,29 @@
       </div>
     </section>
     <section id="map-section">
+      <div class="contacts">
+        <h2>Контакты</h2>
+        <ul>
+          <li>
+            <a href="tel:+375259124960">+375 (25) 912-49-60</a>
+            <a href="mailto:hello@gmail.com">hello@gmail.com</a>
+          </li>
+          <li>
+            <p>Время работы:</p>
+            <p>пн-пт 9:00<br>сб-вс выходной</p>
+          </li>
+          <li>
+            <p>Адрес</p>
+            <p>
+              Какой-то очень длинный адрес,
+              который мне не удалось узнать
+            </p>
+          </li>
+        </ul>
+      </div>
       <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A674df826840fa2836fa6b4d5c10c2d3a86a479be6c12bea7d52b0f9cc9abef11&amp;width=100%25&amp;height=560&amp;lang=ru_RU&amp;scroll=false"></script>
     </section>
-    <section id="form-section">
+    <section id="form-section" class="form-red">
       <div class="container">
         <h2>Как законно получить военный билет?</h2>
         <div class="desc">
@@ -650,20 +674,11 @@
           </span>
         </div>
         <div class="wrap-center">
-          <form method="POST" action="mailer/smart.php" class="form">
+          <form class="form">
             <input type="text" name="user_name" placeholder="Имя" required>
             <input type="tel" name="user_phone" placeholder="Телефон" required>
             <button class="form-btn" type="submit">Заказать бесплатную консультацию </button>
-            <label class="checkbox">
-              <input type="checkbox">
-              <span>
-                Даю согласие на обработку <a href="#">персональных данных</a>
-              </span>
-            </label>
           </form>
-          <p class="text-info">
-            Ответим на ваши вопросы в Viber, Telegram или оставьте заявку на Бесплатную консультацию по вопросам призыва по номеру <a href="tel:+375 (25) 912-49-60">+375 (25) 912-49-60</a> либо напишите нам в ВК, или Instagram
-          </p>
         </div>
       </div>
     </section>
@@ -672,7 +687,9 @@
     <div class="container">
       <div class="left-column">
         <div class="logo">
-          <img src="img/logo2.png" alt="">
+          <a href="#main-section">
+            <img src="img/logo2.png" alt="">
+          </a>
         </div>
         <div class="links">
           <a c href="#">
@@ -682,6 +699,33 @@
             Оплата услуг онлайн
           </a>
         </div>
+      </div>
+      <div class="footer-menu mobile">
+        <nav>
+          <ul>
+            <li>
+              <a class="footer-menu__link" href="#main-section">Главная</a>
+            </li>
+            <li>
+              <a class="footer-menu__link" href="#faqs-section">Заявка и вопросы</a>
+            </li>
+            <li>
+              <a class="footer-menu__link" href="#steps-section">Как мы работаем</a>
+            </li>
+            <li>
+              <a class="footer-menu__link" href="#packets-section">Пакеты</a>
+            </li>
+            <li>
+              <a class="footer-menu__link" href="#staff-section">Сотрудники</a>
+            </li>
+            <li>
+              <a class="footer-menu__link" href="#advantages-section">Преимущества</a>
+            </li>
+            <li>
+              <a class="footer-menu__link" href="#map-section">Контакты</a>
+            </li>
+          </ul>
+        </nav>
       </div>
       <div class="center-column">
         <div class="footer-menu">
@@ -712,9 +756,15 @@
           </nav>
         </div>
         <div class="footer-contacts">
-          <img src="img/vk.png" alt="Vk">
-          <img src="img/instagram.png" alt="Instagram">
-          <img src="img/telegram.png" alt="Telegram">
+          <a href="#">
+            <img src="img/vk.png" alt="Vk">
+          </a>
+          <a href="#">
+            <img src="img/instagram.png" alt="Instagram">
+          </a>
+          <a href="#">
+            <img src="img/telegram.png" alt="Telegram">
+          </a>
         </div>
         <div class="organization">
           <span>
@@ -726,10 +776,27 @@
       </div>
     </div>
   </footer>
-  <div class="overlay"></div>
+  <div class="formresult">
+    <div class="formresult-close">&times;</div>
+    <div class="img-wrap">
+      <img src="img/contact.png" alt="">
+    </div>
+    <div class="title">
+      <span>Ваша заявка отправлена</span>
+    </div>
+    <div class="desc">
+      <span>
+        С вами свяжутся в ближайшее время.
+        Спасибо, что выбираете нас!
+      </span>
+    </div>
+  </div>
+  <div class="overlay">
+  </div>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
 <script src="slick/slick.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>

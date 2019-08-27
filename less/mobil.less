@@ -1,43 +1,309 @@
 // то что слишком большое
-@media screen and (max-width:470px) {
-	
+@media screen and (min-width:1920px) {
+
 }
-@media screen and (min-width: 767px) and (max-width:959px) {
-	
+@media screen and (max-width:1140px) {
+	#header {
+		padding: 10px 0;
+		height: auto;
+		.container {
+			justify-content: space-around;
+		}
+		.header-menu {
+			order: 2;
+			ul {
+				width: 100%;
+				justify-content: space-around;
+			}
+		}
+		.header-contacts {
+			order: 1;
+		}	
+	}
+}
+@media screen and (max-width: 1078px) {
+	#footer .container {
+		justify-content: space-around;
+	}
+	#footer .footer-menu {
+		display: none;
+		li {
+			margin-top: 10px;
+		}
+		a {
+			color: rgba(255, 255, 255, 0.3);
+			margin-left: 0;
+		}
+	}
+	#footer .footer-menu.mobile {
+		display: flex;
+		align-items: flex-end;
+	}
+	#footer .footer-menu.mobile ul {
+		margin-top: auto;
+	    flex-direction: column;
+	    text-align: right;
+
+	}
+
+	#footer .center-column {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 1045px) {
+	#reviews-section .slider-wrap {
+		width: 300px;
+	}
+}
+@media screen and (max-width:1000px) {
+	#steps-section .steps-wrap {
+		background-image: none;
+		height: auto;
+		padding-bottom: 160px;
+		.step-item {
+			margin-top: 170px;
+			top: 0 !important;
+			position: relative;
+			justify-content: space-around;
+			width: 100%;
+			left: inherit !important;
+			right: inherit !important;
+			&:nth-child(1) {
+				margin-top: 50px;
+			}
+			&:nth-child(2n-1) .step-item__text {
+				margin-left: 30px;
+			}
+			&:nth-child(2n) .step-item__text {
+				margin-right: 30px;
+			}
+		}
+		.step-item.step-red::before {
+			top: 457px;
+			height: 500px;
+		}
+	}
+}
+@media screen and (max-width:959px) {
+	#faqs-section h3 {
+	    font-size: 6vw;
+	}
+	#faqs-section .faqs-wrap .faqs-item h2 {
+	    font-size: 32px;
+	}
+	#form-section .form {
+		flex-direction: column;
+		align-items: center;
+	}
+	#form-section .form input[type="text"], #form-section .form input[type="tel"] {
+		margin-top: 36px;
+		width: 500px;
+		max-width: 100%;
+	}
+	#form-section .form button {
+		margin-top: 36px;
+		width: 500px;
+	}
+	#packets-section .packets-wrap {
+		justify-content: space-around;
+		.packets-item {
+			margin-left: 10px;
+		}
+	}
+	#services-section .services-wrap {
+		justify-content: space-around;
+	}
+}
+@media screen and (max-width:890px) {
+	#main-section .text-wrap {
+		margin-top: 100px;
+	}
+	#main-section .img-wrap {
+		display: none;
+	}
+	#faqs-section {
+		margin-top: 200px;
+	}
+	#staff-section {
+		padding-bottom: 20px;
+	}
+	#header .header-menu {
+		display: none;
+	}
+	#staff-section .staff-item {
+		.text-wrap {
+			font-size: 4.4vw;
+			max-width: 100%;
+		}
+		&:nth-child(2n) .text-wrap {
+			padding-left: 250px;
+		}
+		&:nth-child(2n-1) .text-wrap {
+			padding-right: 250px;
+		}
+	}
+}
+@media screen and (max-width: 704px) {
+	#reviews-section {
+		padding-top: 0;
+		padding-bottom: 20px;
+		max-height: inherit;
+		.container {
+			justify-content: center;
+			text-align: center;
+		}
+		.nav-arrows {
+			margin: 20px auto;
+		}
+	}
 }
 @media screen and (max-width: 767px) {
-	
+	#faqs-section .faqs-wrap .faqs-item h2 {
+		font-size: 4vw;
+	}
 }
-// col-...
-@media screen and (max-width:959px) {
-	
+@media screen and (max-width:670px) {
+	#form-section h2 {
+		font-size: 9vw;
+	}
+	#packets-section .packets-wrap {
+		justify-content: inherit;
+		flex-direction: column;
+		align-items: center;
+		.packets-item {
+			margin-left: 0;
+			.content {
+				height: auto;
+			}
+		}
+	}
+	#staff-section h2 {
+		font-size: 13vw;
+	}
+	#services-section h2 {
+		font-size: 9vw;
+	}
+	#map-section {
+		.contacts {
+			width: 100%;
+			box-shadow: none;
+			position: static;
+		}
+	}
 }
-// col-<576
 @media screen and (max-width:576px) {
-	
+	#main-section .text-wrap h1 {
+		font-size: 10vw;
+	}
+	#main-section .text-wrap .desc {
+		font-size: 7vw;
+	}
+	#faqs-section h3 {
+	    font-size: 34px;
+	}
+	#faqs-section .faqs-wrap .faqs-item h2 {
+		font-size: 20px;
+	}
+
+	#faqs-section .faqs-wrap .faqs-item {
+		margin-top: 24px;
+		padding: 14px 18px;
+	}
+	#staff-section .staff-item {
+		.text-wrap {
+			height: 15vw;
+			min-height: 45px;
+			font-size: 3.4vw;
+		}
+		.img-wrap {
+			padding: 4.4vw;
+			width: 24vw;
+			height: 24vw;
+		}
+	}
+	#staff-section .staff-item:nth-child(2n-1) .text-wrap {
+		padding: 10px 26vw 10px 10px !important;
+	}
+	#staff-section .staff-item:nth-child(2n) .text-wrap {
+		padding: 10px 10px 10px 26vw !important;
+	}
+	#footer {
+		.container {
+			text-align: center;
+			justify-content: center;
+		}
+		.footer-menu {
+			width: 100%;
+			justify-content: center;
+			ul {
+				text-align: center !important;
+				margin-top: 16px !important;
+			}
+			a {
+				margin-left: 0;
+			}
+		}
+		.left-column {
+			justify-content: center;
+		}
+	}
+	.formresult .img-wrap img {
+		width: 40vw;
+	}
+	.formresult .title {
+		margin-top: 2vw;
+	    font-size: 6.8vw;
+	}
+	.formresult .desc {
+		margin-top: 1vw;
+	    font-size: 4.4vw;
+	}
 }
-// sm
-@media screen and (min-width: 1023.9px) and (max-width: 1176px) {
-	
-}
-@media screen and (max-width: 1023.9px) {
-	
-}
-// md
-@media screen and (max-width: 843px) {
-	
-}
-// lg
-@media screen and (max-width:1200px) {
-	
-}
-@media screen and (min-width:1920px) {
-	#main-section {
-	    height: auto;
-	    margin-bottom: -8px;
-		.video-bg {
-	    height: auto;
-	    margin-top: -136px;
+@media screen and (max-width:470px) {
+	#main-section .text-wrap .btn {
+		font-size: 20px;
+		width: 300px;
+	}
+	#steps-section h2 {
+		font-size: 10vw;
+	}
+	#steps-section .desc {
+		font-size: 7vw;
+	}
+	#steps-section .steps-wrap {
+		.step-item {
+			img {
+				height: 67vw;
+			}
+			&:nth-child(5) img{
+				height: 46vw;
+			}
+		}
+		.step-item__text {
+			font-size: 4.6vw;
+		}
+		.step-item.step-red::before {
+			height: 390px;
+		}
+		
+	}
+	#advantages-section h2 {
+		margin-top: 20px;
+		font-size: 13vw;
+	}
+	#advantages-section .advantages-item {
+		padding: 20px;
+		height: auto;
+		img {
+			margin-left: 8px !important;
+			width: 28vw;
+			min-width: 76px;
+			margin-left: 0px !important;
+			margin-right: 6px;
+		}
+		p {
+			
+			font-size: 6vw;
 		}
 	}
 }

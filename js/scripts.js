@@ -1,48 +1,34 @@
- $(window).scroll(function () {
-   if ($(this).scrollTop() > 100) {
-     $('#header').addClass('white-header');
-   }
-   else{
-     $('#header').removeClass('white-header');
-   }
- });
+new WOW().init();
 
-$('.header-menu ul li').hover(function(){
-  $(this).children(".header-submenu").slideToggle();
-  $(this).children(".header-submenu").toggleClass('header-submenu_active');
-  $(this).children(".header-submenu").addClass('header-submenu_active');
-});
-
- $('.slider-wrap').slick({
+$('.slider-wrap').slick({
    infinite: true,
    slidesToShow: 2,
    slidesToScroll: 1,
    arrows: true,
    prevArrow: '.arrow-prev',
-   nextArrow: '.arrow-next'
+   nextArrow: '.arrow-next',
+   responsive: [
+     {
+       breakpoint: 1045,
+       settings: {
+         slidesToShow: 1,
+         slidesToScroll: 1,
+       }
+    }
+   ]
  });
-
  $(document).ready(function(){
-   var button = $('.thanks-btn');
-   var form = $('.thanks-popup');
+   var form = $('.formresult');
    var overlay = $('.overlay');
-   var close = $('.thanks-close');
-   var body = $('body');
+   var close = $('.formresult-close');
 
-   button.click(function(){
-     form.css("display", "flex");
-     overlay.css("display", "block");
-     body.css("overflow", "hidden");
-   });
    close.click(function(){
      form.css("display", "none");
      overlay.css("display", "none");
-     body.css("overflow", "scroll");
    });
    overlay.click(function(){
      form.css("display", "none");
      overlay.css("display", "none");
-     body.css("overflow", "scroll");
    });
  });
 
@@ -59,9 +45,24 @@ $(function () {
               if (target.length) {
                   $('html, body').animate({
                       scrollTop: target.offset().top - 50
-                  }, 500);
+                  }, 1000);
                   return false;
               }
           }
       });
   });
+$(document).ready(function() {
+  $(".form").submit(function() {
+    $.ajax({
+      type: "POST",
+      url: "/mailers/form.php",
+      data: $(this).serialize()
+    }).done(function() {
+      $(this).find("input").val("");
+      $(".formresult").css("display", "flex");
+      $(".overlay").css("display", "block");
+      $(".form").trigger("reset");
+    });
+    return false;
+  });
+});
